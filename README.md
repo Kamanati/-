@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.2-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-2.0-green?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/kamanati/zphisher?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/kamanati/zphisher?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/kamanati/zphisher?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/kamanati/zphisher?color=teal&style=for-the-badge">
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 - `I have added a freefire redemption site in this`
 - `Fix cloudflared faster`.<br><br>
 **screenshot:**
-![screenshot]()
+![screenshot](.imgs/step6.png)
 ##
 
 <h3><p align="center">Disclaimer</p></h3>
