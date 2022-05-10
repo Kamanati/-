@@ -167,7 +167,7 @@ banner() {
                 ${BLUE}  Author will not be responsible for any damages by this tool
                 ${YELLOW}IF YOU HAVE ANY ERROR CONTACT ME AS ON "hasanfq818@gmail.com"
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by hasanfq (hasan.fatalt)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tec (modified by hasanfq)${WHITE}
 	EOF
 }
 
