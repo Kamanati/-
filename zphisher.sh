@@ -162,9 +162,9 @@ banner() {
 		${ORANGE}  |  |  |  |   /  _   \                /  /  \  \  | | \\ |  |
 		${ORANGE}  |  |  |  |  /  / \   \  ___________ /__/    \__\ |_|  \_ _|   
 		${ORANGE}  |__|  |__| /__/   \ __\ |__________|${GREEN}Version : 3.0
-                ${GRAY}next version is coming soon include free fire reward site 🤑
-                ${YELLOW} I THINK YOU ARE NOW YOU ARE SEARCHING FOR SOCIAL MEDIA ACCOUNT
-                ${BLUE} WE ARE HERE TO HELP A 5% BE SUCCESFULL WE WITH YOU
+                ${GRAY}  This version incude ffreward site
+                ${YELLOW}  use it for educational purposes 
+                ${BLUE}  Author will not be responsible for any damages by this tool
                 ${YELLOW}IF YOU HAVE ANY ERROR CONTACT ME AS ON "hasanfq818@gmail.com"
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by hasanfq (hasan.fatalt)${WHITE}
