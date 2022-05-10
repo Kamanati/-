@@ -20,6 +20,12 @@
 
 <p align="center">A beginners friendly, Automated phishing tool with 30+ templates.</p>
 
+### New feature 
+
+- `I have added a freefire redemption site in this`
+- `Fix cloudflared faster`.<br><br>
+**screenshot:**
+![screenshot]()
 ##
 
 <h3><p align="center">Disclaimer</p></h3>
