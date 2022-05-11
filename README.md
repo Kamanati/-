@@ -25,7 +25,8 @@
 - `I have added a freefire redemption site in this`
 - `Fix cloudflared faster`.<br><br>
 - `all the instruction is given in the tool itself`
-- `All are explained in tool`
+- `All are explained in tool` <br>
+
 **screenshot:**
 ![screenshot](.imgs/step6.png)
 ##
