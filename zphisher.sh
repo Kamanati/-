@@ -540,6 +540,7 @@ echo -e $r"[x] you can't use this tool "
 echo ""
 echo -e $g"[+] To use contact me on instagram"
 sleep 2
+main_menu
 am start -a android.intent.action.VIEW -d https://instagram.com/hasanfq6?igshid=YmMyMTA2M2Y= > /dev/null 2>&1
 exit
 fi
