@@ -61,6 +61,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 ```
 $ git clone https://github.com/Kamanati/zphisher
 $ cd zphisher 
+$ chmod +x *
 $ ./zphisher.sh
 
 - On first launch, It'll install the dependencies and that's it. `Zphisher` is installed.
