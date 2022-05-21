@@ -99,7 +99,7 @@ echo -e $r[$g$now$r] "getting ready......"
 sleep 3
 echo ""
 echo -e $g"- instaling packages"$w
-pkg install pv
+pkg install pv &> /dev/null
 
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	Hasanfq 
