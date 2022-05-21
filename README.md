@@ -60,20 +60,11 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Just, Clone this repository -
 ```
 $ git clone https://github.com/Kamanati/zphisher
-```
-
-- Change to cloned directory and run `zphisher.sh` -
-```
-$ cd zphisher
-$ bash zphisher.sh
-```
+$ cd zphisher 
+$ ./zphisher.sh
 
 - On first launch, It'll install the dependencies and that's it. `Zphisher` is installed.
 
-### Run on Docker
-```
-$ docker pull htrtech/zphisher
-$ docker run --rm -it htrtech/zphisher
 ```
 
 ### Dependencies
@@ -88,13 +79,12 @@ $ docker run --rm -it htrtech/zphisher
 
 > Supported Platform : **`Termux`**, **`Ubuntu/Debian/Kali/Parrot`**, **`Arch Linux/Manjaro`**, **`Fedora`**
 
-##
 
 <h3 align="center">
 :: Workflow ::
 </h3>
 <p align="center">
-<img src=".imgs/wf.gif"/>
+<img src=".imgs/SmartSelect_20220521-102245_Termux.gif"/>
 </p>
 
 
