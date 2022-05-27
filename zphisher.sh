@@ -49,7 +49,7 @@ pkg install play-audio -y &> /dev/null;
 fi
 
 
-echo -e $B "	               ZPHISHER V 3.0                         "$W
+echo -e $B "	               ZPHISHER V 3.0.5                        "$W
 echo -e $B "                     NEW MODIFIED TOOL                        "$W
 
   echo -e $r "                        9oDFo                                    "
