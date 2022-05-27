@@ -27,8 +27,8 @@ W="\e[1;0m"
 
 echo ""
 echo -e $g"- instaling packages"$w
-pkg install pv &> /dev/null;
-pip install termdwon &> /dev/null;
+pkg install pv -y &> /dev/null;
+pip install termdwon -y &> /dev/null;
 
 echo -e $B "	               ZPHISHER V 3.0                         "$W
 echo -e $B "                     NEW MODIFIED TOOL                        "$W
