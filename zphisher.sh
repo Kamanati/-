@@ -101,7 +101,7 @@ sleep 0.05
 sleep 0.05
 
 echo -e $r[$g$now$r] "getting ready......"
-sleep 1
+play-audio /data/data/com.termux/files/home/zphisher/.misc/misc2.mp3
 
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	Hasanfq 
