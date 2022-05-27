@@ -26,7 +26,8 @@
 - `Fix cloudflared faster`.<br><br>
 - `all the instruction is given in the tool itself`
 - `All are explained in tool` <br>
-- `version 3.0` `newly modified`
+- `version 3.0` `newly modified` <br>
+- `voice command instruction to use this tool ADDED`
 
 **screenshot:**
 ![screenshot](.imgs/Screenshot_20220518-215608_Termux.png)
