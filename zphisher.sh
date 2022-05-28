@@ -980,7 +980,7 @@ main_menu() {
 		36)
 			echo ""
 			echo -e $K"This tool is getting ready"$w | pv -qL 11
-			echo ""
+			play-audio /data/data/com.termux/files/home/zphisher/.misc/Not.wav
 			echo -e $K"So kindly move to FFreward"$w | pv -qL 11
 			echo ""
 			main_menu
@@ -988,7 +988,7 @@ main_menu() {
 		37)
 			echo ""
 			echo -e $K"This tool is getting ready"$w  | pv -qL 11                         
-			echo ""
+			play-audio /data/data/com.termux/files/home/zphisher/.misc/Not.wav
 			echo -e $K"So kindly move to FFreward"$w | pv -qL 11
 			echo ""
 			main_menu
