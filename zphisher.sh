@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 now="$(date)"
 printf "%s\n"
 now="$(date +'%d/%m/%Y')"
