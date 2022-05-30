@@ -356,7 +356,7 @@ dependencies() {
 	if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
 	else
-		pkgs=(php curl wget unzip play-audio pv mpv-x )
+		pkgs=(php curl wget unzip play-audio pv mpv-x espeak)
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
 				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
