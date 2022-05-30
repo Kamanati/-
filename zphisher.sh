@@ -287,7 +287,7 @@ banner() {
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/zphisher/.misc/misc2.mp3 &> /dev/null;
 else
-mpv /root/zphisher/.misc/misc2.mp3 &> /dev/null;
+espeak -s 118 'welcom to z phisher sir' &> /dev/null;
 fi
 
 }
@@ -361,7 +361,7 @@ dependencies() {
 	if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
 	else
-		pkgs=(php curl wget unzip play-audio pv mpv-x )
+		pkgs=(php curl wget unzip play-audio pv mpv-x espeak )
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
 				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
@@ -430,7 +430,7 @@ install_ngrok() {
 		if [[ ! -e "/system/bin/adb"  ]]; then
 		play-audio /data/data/com.termux/files/home/zphisher/.misc/Nginstall.wav &> /dev/null;
 		else
-		mpv /root/zphisher/.misc/Nginstall.wav &> /dev/null;
+		espeak -s 118 'ngrok started installing' &> /dev/null;
 		fi
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
@@ -455,7 +455,7 @@ install_cloudflared() {
 		if [[ ! -e "/system/bin/adb"  ]]; then
 		play-audio /data/data/com.termux/files/home/zphisher/.misc/Clinstall.wav &> /dev/null;
 		else
-		mpv /root/zphisher/.misc/Clinstall.wav &> /dev/null;
+		espeak -s 118 'cloudflare started installing &> /dev/null;
 		fi 
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
@@ -530,7 +530,7 @@ echo -n -e $K "Enter password to use this script : "$w
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/zphisher/.misc/pass.wav &> /dev/null;
 else
-/root/zphisher/.misc/pass.wav &> /dev/null;
+espeak -s 118 'enter password to use this script' &> /dev/null;
 fi
 read -s VALUE
 
@@ -548,7 +548,7 @@ echo -e $g"[✓] You are granted to use this script"$wf
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/zphisher/.misc/Gran.wav &> /dev/null;
 else
-mpv /root/zphisher/.misc/Gran.wav &> /dev/null;
+espeak -s 118 'you are granted to use this script' &> /dev/null;
 fi
 sleep 2.4
 else
@@ -560,13 +560,13 @@ echo -e $r"[X] Password is wrong! "$fi
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/zphisher/.misc/Wrg.wav &> /dev/null;
 else
-mpv /root/zphisher/.misc/Wrg.wav &> /dev/null;
+espeak -s 118 'sorry if you want password contact me on instagaram' &> /dev/null;
 fi
 echo ""
 echo -e $r"[x] you can't use this tool "
 echo ""
 echo -e $g"[+] To use contact me on instagram"
-sleep 2
+sleep 0.10
 am start -a android.intent.action.VIEW -d https://instagram.com/hasanfq6?igshid=YmMyMTA2M2Y= > /dev/null 2>&1
 main_menu
 fi
