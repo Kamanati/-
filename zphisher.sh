@@ -712,7 +712,7 @@ tunnel_menu() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/port.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/port.wav &> /dev/null;
+	espeak -s 118 'choose the tunnel you want to use' &> /dev/null;
 	fi
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select a port forwarding service : ${BLUE}"
 
@@ -888,7 +888,7 @@ main_menu() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/zphisher/.misc/Templ.wav &> /dev/null;
 	else
-	mpv /root/zphisher/.misc/Templ.wav &> /dev/null; 
+	espeak -s 118 'select any template from this' &> /dev/null; 
 	fi
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
 
