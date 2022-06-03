@@ -24,7 +24,14 @@ K="\033[0;100m"
 D="\033[4;31m"
 G="\033[1;96m"
 W="\e[1;0m"
-
+echo -e $r"sorry this is expired so use tool given below "
+echo -e $r"this tool become dangerous by my fault"
+echo -e $r"dont run this your system or mobile will go to risk "
+echo -e $r"please exit or use this tool"
+echo -e $g"https://github.com/Kamanati/kmphisher"
+am start --user 0 -n com.android.chrome/com.google.android.apps.chrome.Main -d https://github.com/kamanati/kmphisher
+sleep 7
+exit 1 
 echo ""
 touch girls\ boo** 
 
